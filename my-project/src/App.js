@@ -1,9 +1,15 @@
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+
+import HomePage from './pages/HomePage';
 // import logo from './logo.svg';
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome</h1>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
     </div>
   );
 }
